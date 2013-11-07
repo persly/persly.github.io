@@ -1,0 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400|Open+Sans:600,300);
+
+body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+body {
+  max-width: 600px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+header {
+  margin: 3em 0;
+  font-family: 'Josefin Slab', serif;
+}
+header h1 {
+  font-size: 3em;
+  font-weight: 400;
+  margin: 0;
+}
+header p.tagline {
+  margin: 0;
+  line-height: 1.4em;
+}
+h2 {
+  
+}
+article img {
+  max-width: 100%;
+}
+article p {
+  line-height: 1.7em;
+}
