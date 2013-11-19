@@ -4,7 +4,7 @@
   <title>{{ site.title }}</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href="http://fonts.googleapis.com/css?family=Fenix|Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans:300,400,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.3.0/base-min.css&pure/0.3.0/grids-min.css">
   <link rel="stylesheet" href="/css/styles.css">
   <script>
@@ -17,16 +17,21 @@
   </script>
 </head>
 <body>
-  <header>
-    <h1>{{ site.title }}</h1>
-    <p class="tagline">{{ site.tagline }}</p>
-  </header>
-  {% for post in site.posts %}
-  <article>
-    <img src="{{ post.image }}">
-    <h2>{{ post.title }}</h2>
-    {{ post.content | markdownify }}
-  </article>
-  {% endfor %}
+  <div class="container">
+    <header>
+      <h1>{{ site.title }}</h1>
+    </header>
+    <section id="sign-up">
+      <p>Are you a personal chef or baker? Be a part of the beta program for free. Sign up for updates.</p>
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form action="http://persly.us3.list-manage2.com/subscribe/post?u=f790fb64e770a89069afbbbeb&amp;id=8e66188057" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <input type="email" value="" name="EMAIL" class="required email" placeholder="email" id="mce-EMAIL">
+          <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </form>
+      </div>
+      <!--End mc_embed_signup-->
+    </section>
+  </div>
 </body>
 </html>
