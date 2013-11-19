@@ -1,38 +1,53 @@
-@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400|Open+Sans:600,300);
-
 body,
 .pure-g [class *= "pure-u"],
-.pure-g-r [class *= "pure-u"] {
+.pure-g-r [class *= "pure-u"],
+input {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 18px;
 }
 
 body {
-  max-width: 600px;
-  width: 85%;
-  margin: 0 auto;
+  background-image: url('/img/perslybetapage-1024x680.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #222;
+}
+
+.container {
+  position: absolute;
+  width: 95%;
+  max-width: 515px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(255,255,255,0.9);
+  border-radius: 1em;
+  margin: -138px auto 0;
+  padding: 0 3em 2em;
+  box-sizing: border-box;
 }
 
 header {
-  margin: 3em 0;
-  font-family: 'Josefin Slab', serif;
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
 }
 header h1 {
-  font-size: 3em;
+  font-size: 6em;
   font-weight: 400;
   margin: 0;
 }
-header p.tagline {
-  margin: 0;
-  line-height: 1.4em;
+
+#sign-up { }
+#sign-up input {
+  padding: 0.5em 0.8em;
+  font-size: 0.8em;
+  background: rgba(255,255,255,0.9);
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
 }
-h2 {
-  
-}
-article img {
-  max-width: 100%;
-}
-article p {
-  line-height: 1.7em;
+#sign-up input[type=email] {
+  width: 270px;
 }
